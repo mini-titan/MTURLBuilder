@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-tatsuhiro koyama, tatsuhiro_koyama@dwango.co.jp
+mini-titan, tatsuro.nekoyama@gmail.com
 
 ## License
 

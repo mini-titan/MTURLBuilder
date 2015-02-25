@@ -2,8 +2,8 @@
 //  MTViewController.m
 //  MTURLBuilder
 //
-//  Created by tatsuhiro koyama on 02/24/2015.
-//  Copyright (c) 2014 tatsuhiro koyama. All rights reserved.
+//  Created by mini-titan on 02/24/2015.
+//  Copyright (c) 2014 mini-titan. All rights reserved.
 //
 
 #import "MTViewController.h"
@@ -17,7 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning
