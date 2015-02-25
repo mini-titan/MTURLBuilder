@@ -29,7 +29,7 @@
     urlBuilder.port = nsUrl.port;
     urlBuilder.path = nsUrl.path;
     for (NSArray *query in [MTURLBuilder parseQueries : nsUrl.query]) {
-        [urlBuilder addQuery:query[1] withKey:query[0]];
+        [urlBuilder addQuery:query[1] forKey:query[0]];
     }
     urlBuilder.fragment = nsUrl.fragment;
     return urlBuilder;
@@ -70,7 +70,7 @@
     return [NSURL URLWithString:[urlArray componentsJoinedByString:@""]];
 }
 
-- (void)addQuery:(NSString *)value withKey:(NSString *)key
+- (void)addQuery:(NSString *)value forKey:(NSString *)key
 {
     [_queries addObject:@[key, value]];
 }

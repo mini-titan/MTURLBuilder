@@ -101,7 +101,7 @@ describe(@"MTURLBuilder", ^{
                                               instance.host = @"test";
                                               instance.port = @8080;
                                               instance.path = @"/path";
-                                              [instance addQuery:@"value" withKey:@"key"];
+                                              [instance addQuery:@"value" forKey:@"key"];
                                               instance.fragment = @"fragment";
                                               return instance.build.absoluteString;
                                           });
@@ -112,7 +112,7 @@ describe(@"MTURLBuilder", ^{
                           context(@"with parsed url and params", ^{
                                       let(subject, ^{
                                               MTURLBuilder *builder = [MTURLBuilder parse:@"http://test2.com/path1/path2?a=b"];
-                                              [builder addQuery:@"value2" withKey:@"key2"];
+                                              [builder addQuery:@"value2" forKey:@"key2"];
                                               builder.fragment = @"fragment";
                                               return builder.build.absoluteString;
                                           });

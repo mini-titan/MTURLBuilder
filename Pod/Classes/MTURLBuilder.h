@@ -19,7 +19,7 @@
 
 + (MTURLBuilder *)parse:(NSString *)urlString;
 - (NSURL *)build;
-- (void)addQuery:(NSString *)value withKey:(NSString *)key;
+- (void)addQuery:(NSString *)value forKey:(NSString *)key;
 
 + (NSMutableArray *)parseQueries:(NSString *)queryString;
 + (NSDictionary *)parseUniqueQueries:(NSString *)queryString;
